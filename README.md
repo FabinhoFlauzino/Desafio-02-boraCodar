@@ -17,7 +17,7 @@ Projeto do desafio #boraCodar da RocketSeat
 
 <br>
 
-  [Link do Projeto Pronto]()
+  [Link do Projeto Pronto](https://fabinhoflauzino.github.io/Desafio-02-boraCodar/)
 
 
 <p align="center">
