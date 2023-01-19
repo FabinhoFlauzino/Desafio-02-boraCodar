@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap");
+:root {
+  --bg-color: #D9CDF7;
+  --text-color: #271a27;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #app {
+  display: flex;
+  align-items: center;
+}
+body #app .product-image {
+  position: relative;
+}
+body #app .product-image .btn-group {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+}
+body #app .product-image .btn-group button {
+  border: none;
+  padding: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+body #app .product-image .btn-group button:hover {
+  opacity: 0.85;
+}
+body #app .product-image .btn-group .btn-close {
+  display: none;
+}
+body #app .product-image > img {
+  max-width: 100%;
+  height: 253px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #app .product-details {
+  display: grid;
+  gap: 18px;
+}
+body #app .product-details h4 {
+  font-weight: 300;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+body #app .product-details h1 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Crimson Pro", serif;
+}
+body #app .product-details p {
+  opacity: 0.67;
+}
+body #app .product-details button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 165px;
+  height: 32px;
+  background-color: transparent;
+  border: 0.5px solid #271A45;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+body #app .product-details button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+@media (max-width: 800px) {
+  body #app {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body #app .product-image > img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  body #app .product-details {
+    gap: 14px;
+  }
+  body #app .product-details h4 {
+    font-size: 12px;
+  }
+  body #app .product-details h1 {
+    font-size: 26px;
+  }
+  body #app .product-details button {
+    width: 100%;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=main.css.map */
